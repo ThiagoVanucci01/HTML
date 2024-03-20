@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago</title>
+
+    <style>
+      body {
+        background: #d400bb;
+        color: #e6e6e6;
+        text-shadow: 2px 5px 12px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+
+    <h2>Alerta de mensagem!</h2>
+    
+    <p style="text-align: center">
+        <button onclick="alerta()"
+        style=""> ALERTA
+   </button>
+
+        <h2>Altere a cor do fundo do site clicando em uma das cores abaixo</h2>
+    </p>
+    <p style="text-align: center">
+     
+
+     <button onclick="vermelho()">Vermelho</button>
+     <button onclick="azul()">Azul</button>
+     <button onclick="escolheCor()">???????</button>
+
+  </body>
+
+  <script>
+    console.log("Olá Mundo!!");
+
+    function alerta() {
+        var nome = prompt("Olá, informe seu nome")
+        alert (`Olá ${nome}!`)
+    }
+    
+function vermelho() {
+  document.getElementsByTagName("body")[0].style.background = "red"
+}
+azul = () => {
+  document.getElementsByTagName("body")[0].style.background = "blue"
+}
+escolheCor = () => {
+  document.getElementsByTagName("body")[0].style.background = prompt(
+    "informe uma cor em inglês"
+  )
+}
+
+    </script>
+</html>
